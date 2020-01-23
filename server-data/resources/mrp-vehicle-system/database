@@ -1,0 +1,31 @@
+CREATE TABLE `vehicles1` (
+	`vehicleId` int(50) NOT NULL AUTO_INCREMENT,
+    `steamId` VARCHAR(255) NULL DEFAULT NULL,
+	`CharacterId` int(50) NULL DEFAULT NULL,
+	`args` VARCHAR(255) NULL DEFAULT NULL,
+    `model` VARCHAR(255) NULL DEFAULT NULL,
+    `isCarSpawned` INT(14) NULL DEFAULT NULL,
+    `heading` INT(14) NULL DEFAULT NULL,
+    `upgrades` VARCHAR(255) NULL DEFAULT NULL,
+    `wheelHealth` INT(14) NULL DEFAULT NULL,
+    `vehicleFuel` INT(14) NULL DEFAULT NULL,
+    `primaryColor` INT(14) NULL DEFAULT NULL,
+    `secondaryColor` INT(14) NULL DEFAULT NULL,
+    `doorsLocked` INT(14) NULL DEFAULT NULL,
+    `engineHealth` decimal(14,0) NULL DEFAULT NULL,
+    `bodyHealth` INT(14) NULL DEFAULT NULL,
+    `tint` INT(14) NULL DEFAULT NULL,
+    `X` int(50) NULL DEFAULT NULL,
+    `Y` int(50) NULL DEFAULT NULL,
+    `Z` int(20) NULL DEFAULT NULL,
+
+    PRIMARY KEY (vehicleId)
+ 
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
+
+
+INSERT INTO vehicles1('vehicleId')
+VALUES('')
